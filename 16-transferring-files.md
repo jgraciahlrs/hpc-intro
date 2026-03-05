@@ -5,6 +5,20 @@ exercises: 15
 ---
 
 
+``` warning
+Warning in file(input, encoding = "UTF-8"): 'raw = FALSE' but
+'files/customization/HPCC_MagicCastle_slurm' is not a regular file
+```
+
+``` warning
+Warning in readLines(con, warn = readLines.warn): cannot open file
+'files/customization/HPCC_MagicCastle_slurm': it is a directory
+```
+
+``` error
+Error in `readLines()`:
+! cannot open the connection
+```
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 

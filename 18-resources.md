@@ -5,6 +5,20 @@ exercises: 20
 ---
 
 
+``` warning
+Warning in file(input, encoding = "UTF-8"): 'raw = FALSE' but
+'files/customization/HPCC_MagicCastle_slurm' is not a regular file
+```
+
+``` warning
+Warning in readLines(con, warn = readLines.warn): cannot open file
+'files/customization/HPCC_MagicCastle_slurm': it is a directory
+```
+
+``` error
+Error in `readLines()`:
+! cannot open the connection
+```
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
@@ -67,18 +81,9 @@ use `sacct -u yourUsername` to get statistics about `parallel-job.sh`.
 ```
 
 
-```output
-       JobID    JobName  Partition    Account  AllocCPUS      State ExitCode
------------- ---------- ---------- ---------- ---------- ---------- --------
-7               file.sh cpubase_b+ def-spons+          1  COMPLETED      0:0
-7.batch           batch            def-spons+          1  COMPLETED      0:0
-7.extern         extern            def-spons+          1  COMPLETED      0:0
-8               file.sh cpubase_b+ def-spons+          1  COMPLETED      0:0
-8.batch           batch            def-spons+          1  COMPLETED      0:0
-8.extern         extern            def-spons+          1  COMPLETED      0:0
-9            example-j+ cpubase_b+ def-spons+          1  COMPLETED      0:0
-9.batch           batch            def-spons+          1  COMPLETED      0:0
-9.extern         extern            def-spons+          1  COMPLETED      0:0
+``` error
+Error in `snippets()`:
+! snippets() called before configuration was loaded.
 ```
 
 This shows all the jobs we ran today (note that there are multiple entries per
